@@ -1,0 +1,73 @@
+:root {
+    --dark-color: #1d3557;
+    --middle-color: #457b9d;
+    --info-color: #a8dadc;
+    --light-color: #f1faee;
+    --alert-color: #e63946;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--dark-color);
+    color: var(--dark-color);
+}
+
+
+.header {
+    background-color: var(--alert-color);
+    color: var(--light-color);
+    padding: 1rem;
+}
+
+.main {
+    background-color: var(--dark-color);
+    padding: 1rem;
+}
+
+.news {
+    min-width: 30rem;
+    border: 2px solid var(--info-color);
+    background-color: var(--light-color);
+    padding: 1rem;
+}
+
+.news + .news {
+    margin-top: 1rem;
+}
+
+.navigation {
+    background-color: var(--light-color);
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.navigation--item {
+    padding: 0.5rem;
+}
+
+.navigation--item + .navigation--item {
+    margin-right: 1rem;
+}
+
+.link {
+    color: var(--dark-color);
+}
+
+.link:visited {
+    color: var(--dark-color);
+}
+
+.link:focus,
+.link:hover {
+    color: var(--info-color);
+}
+
+.link:active {
+    color: var(--info-color);
+}
+
+.footer {
+    background-color: var(--alert-color);
+    color: var(--light-color);
+    padding: 1rem;
+}
