@@ -1,0 +1,41 @@
+.page {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.page__header {
+  font-size: 6.25rem;
+  font-weight: 500;
+  background: red;
+  padding: 12rem 20rem 9.625rem;
+  background: var(--white);
+}
+
+.page__main {
+  background-color: var(--grey-1);
+  flex-grow: 1;
+}
+
+.page__footer {
+  background-color: var(--white);
+  padding: 8.875rem 10rem 17rem;
+  text-align: center;
+}
+
+.page__about {
+  font-size: 4.76rem;
+  line-height: 6rem;
+  font-weight: 500;
+}
+
+.page__text {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  margin-top: 4rem;
+}
