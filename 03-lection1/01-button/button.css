@@ -6,7 +6,7 @@
   line-height: 2.25rem;
 
   box-sizing: border-box;
-  padding: 3rem 4rem;
+  padding: 2rem 4rem;
   cursor: pointer;
   border: none;
   border-radius: 1rem;
@@ -17,6 +17,7 @@
   opacity: 0.5;
   cursor: default;
   user-select: none;
+  pointer-events: none;
 }
 
 .button--primary {
