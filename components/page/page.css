@@ -19,6 +19,14 @@
 .page__main {
   background-color: var(--grey-1);
   flex-grow: 1;
+  padding: 3rem 0;
+}
+
+.page__grid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .page__footer {
