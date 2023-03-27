@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="./components/card/card.css">
   <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
   <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
+  <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
+  <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
   <title>Reusable component library</title>
 </head>
 <body class="page">
@@ -53,12 +55,35 @@
       <span class="card__title">Skeleton</span>
     </div>
     <div class="card">
-      <span class="card__title">sample 3</span>
+      <div style="text-align:center">
+      <span class="tooltip">
+        <svg class="tooltip__trigger" height="3rem" width="3rem">
+          <use href='../../assets/icons/bundle.svg#help'/>
+        </svg>
+        <span class="tooltip__balloon">I am a tooltip for small trigger!</span>
+      </span>
+      </div>
+      <span class="card__title">Tooltip</span>
     </div>
     <div class="card">
-      <span class="card__title">sample 4</span>
+      <div class="calendar" style="margin: auto;">
+        <div class="calendar__title current-month">April 2023</div>
+        <div class="calendar__wrapper">
+          <div class="calendar__body">
+            <span class="calendar__item calendar__item--day">Mon</span>
+            <span class="calendar__item calendar__item--day">Tue</span>
+            <span class="calendar__item calendar__item--day">Wed</span>
+            <span class="calendar__item calendar__item--day">Thu</span>
+            <span class="calendar__item calendar__item--day">Fri</span>
+            <span class="calendar__item calendar__item--day">Sat</span>
+            <span class="calendar__item calendar__item--day start-with">Sun</span>
+          </div>
+        </div>
+      </div>
+      <span class="card__title">Calendar</span>
     </div>
     <div class="card">
+      <div></div>
       <span class="card__title">sample 5</span>
     </div>
   </div>
@@ -70,5 +95,7 @@
     curious about.
   </div>
 </footer>
+
+<script type="application/javascript" src="./05-lection3/03-calendar/index.js" onload="initCalendar()"></script>
 </body>
 </html>
