@@ -1,0 +1,30 @@
+.menu {
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-right: 7rem;
+  margin-left: auto;
+}
+
+.menu__title {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+}
+
+.menu__item {
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
+
+.menu__item--last {
+  margin-top: 3rem;
+}
+
+.menu__item--active {
+  color: var(--error);
+}
+

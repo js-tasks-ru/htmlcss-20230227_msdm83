@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./components/page/page.css">
   <link rel="stylesheet" href="./components/card/card.css">
+  <link rel="stylesheet" href="./components/shapes/shapes.css">
   <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
   <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
   <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
@@ -12,9 +13,16 @@
   <title>Reusable component library</title>
 </head>
 <body class="page">
-<header class="page__header">Reusable component library</header>
+<header class="page__header">
+  <div class="shapes">
+    <span class="shape shape--square"></span>
+    <span class="shape shape--circle"></span>
+    <span class="shape shape--triangle"></span>
+  </div>
+  <div class="header__title">Reusable component library</div>
+</header>
 <main class="page__main">
-  <div class="page__grid">
+  <div class="page__grid page__grid--cards">
     <div class="card">
       <div class="histogram">
         <div class="histogram-header">
