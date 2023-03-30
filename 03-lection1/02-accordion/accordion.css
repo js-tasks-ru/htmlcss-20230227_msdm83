@@ -3,7 +3,7 @@
 
 }
 
-.accordion-item {
+.accordion__item {
   font-family: 'Inter', 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 2rem;
@@ -14,15 +14,15 @@
   border-radius: 2rem;
 }
 
-.accordion-item + .accordion-item {
+.accordion__item + .accordion__item {
   margin-top: 1rem;
 }
 
-.accordion-item:hover {
+.accordion__item:hover {
   border-color: var(--black);
 }
 
-.accordion-item:active {
+.accordion__item:active {
   border-color: var(--black-80);
 }
 
@@ -41,7 +41,7 @@
   right: 0;
 }
 
-.accordion-item[open] .accordion__summary:after {
+.accordion__item[open] .accordion__summary:after {
   content: '\2191';
 }
 
