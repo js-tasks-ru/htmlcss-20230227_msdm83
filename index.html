@@ -4,11 +4,90 @@
 <head>
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./components/page/page.css">
+  <link rel="stylesheet" href="./components/card/card.css">
+  <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+  <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
+  <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
+  <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
   <title>Reusable component library</title>
 </head>
 <body class="page">
 <header class="page__header">Reusable component library</header>
-<main class="page__main">lala</main>
+<main class="page__main">
+  <div class="page__grid">
+    <div class="card">
+      <div class="histogram">
+        <div class="histogram-header">
+          <div class="histogram-wrapper">
+            <span class="histogram-title">Total orders</span>
+            <a href="#" class="link">View all</a>
+          </div>
+          <span class="histogram-numbers">9486904</span>
+        </div>
+        <div class="histogram_body">
+          <span class="histogram-column" style="height: 100%"></span>
+          <span class="histogram-column" style="height: 80%"></span>
+          <span class="histogram-column" style="height: 70%"></span>
+          <span class="histogram-column" style="height: 10%"></span>
+          <span class="histogram-column" style="height: 0"></span>
+          <span class="histogram-column" style="height: 1%"></span>
+          <span class="histogram-column" style="height: 99%"></span>
+          <span class="histogram-column" style="height: 50%"></span>
+          <span class="histogram-column" style="height: 33%"></span>
+        </div>
+      </div>
+      <span class="card__title">Histogram</span>
+    </div>
+    <div class="card">
+      <div class="skeleton">
+        <div class="skeleton-header">
+          <div class="skeleton-picture"></div>
+          <div class="skeleton-title">
+            <div class="skeleton-line skeleton-line--small"></div>
+            <div class="skeleton-line skeleton-line--medium"></div>
+          </div>
+        </div>
+        <div class="skeleton-body">
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+        </div>
+      </div>
+      <span class="card__title">Skeleton</span>
+    </div>
+    <div class="card">
+      <div style="text-align:center">
+      <span class="tooltip">
+        <svg class="tooltip__trigger" height="3rem" width="3rem">
+          <use href='../../assets/icons/bundle.svg#help'/>
+        </svg>
+        <span class="tooltip__balloon">I am a tooltip for small trigger!</span>
+      </span>
+      </div>
+      <span class="card__title">Tooltip</span>
+    </div>
+    <div class="card">
+      <div class="calendar" style="margin: auto;">
+        <div class="calendar__title current-month">April 2023</div>
+        <div class="calendar__wrapper">
+          <div class="calendar__body">
+            <span class="calendar__item calendar__item--day">Mon</span>
+            <span class="calendar__item calendar__item--day">Tue</span>
+            <span class="calendar__item calendar__item--day">Wed</span>
+            <span class="calendar__item calendar__item--day">Thu</span>
+            <span class="calendar__item calendar__item--day">Fri</span>
+            <span class="calendar__item calendar__item--day">Sat</span>
+            <span class="calendar__item calendar__item--day start-with">Sun</span>
+          </div>
+        </div>
+      </div>
+      <span class="card__title">Calendar</span>
+    </div>
+    <div class="card">
+      <div></div>
+      <span class="card__title">sample 5</span>
+    </div>
+  </div>
+</main>
 <footer class="page__footer">
   <div class="page__about">About</div>
   <div class="page__text">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop
@@ -16,5 +95,7 @@
     curious about.
   </div>
 </footer>
+
+<script type="application/javascript" src="./05-lection3/03-calendar/index.js" onload="initCalendar()"></script>
 </body>
 </html>

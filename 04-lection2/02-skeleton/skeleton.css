@@ -1,0 +1,59 @@
+.skeleton {
+  box-sizing: border-box;
+  background: var(--white);
+  border: 1px solid var(--grey-3);
+  border-radius: 1rem;
+  padding: 2rem 5rem 4rem 3rem;
+}
+
+.skeleton-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.skeleton-title {
+  flex-grow: 1;
+}
+
+.skeleton-picture,
+.skeleton-line {
+  background: #eee;
+  background: linear-gradient(110deg, var(--grey-20) 8%, var(--grey-30) 18%, var(--grey-20) 33%);
+  animation: skeleton-shine 4s linear infinite;
+}
+
+.skeleton-picture {
+  width: 8rem;
+  height: 8rem;
+  background-size: 800%;
+  border-radius: 100%;
+}
+
+.skeleton-line {
+  width: 100%;
+  height: 2.5rem;
+  background-size: 400%;
+}
+
+.skeleton-line--small {
+  width: 40%;
+}
+
+.skeleton-line--medium {
+  width: 60%;
+}
+
+.skeleton-line + .skeleton-line {
+  margin-top: 1rem;
+}
+
+@keyframes skeleton-shine {
+  from{
+    background-position-x: 100%;
+  }
+  to {
+    background-position-x: -200%;
+  }
+}
