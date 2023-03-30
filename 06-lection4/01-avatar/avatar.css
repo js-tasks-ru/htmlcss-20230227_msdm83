@@ -1,0 +1,15 @@
+.avatar {
+  width: 12.75rem;
+  height: 12.75rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.avatar--huge {
+  width: 51rem;
+  height: 51rem;
+}
+
+.avatar__image {
+  object-fit: cover;
+}

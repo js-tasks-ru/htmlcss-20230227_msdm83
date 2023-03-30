@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <!-- Страница с календарем -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./calendar.css">
-        <title>Calendar</title>
-    </head>
-    <body>
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./calendar.css">
+  <title>Calendar</title>
+</head>
+<body>
+<div class="calendar">
+  <div class="calendar__title current-month">April 2023</div>
+  <div class="calendar__wrapper">
+    <div class="calendar__body">
+      <span class="calendar__item calendar__item--day">Mon</span>
+      <span class="calendar__item calendar__item--day">Tue</span>
+      <span class="calendar__item calendar__item--day">Wed</span>
+      <span class="calendar__item calendar__item--day">Thu</span>
+      <span class="calendar__item calendar__item--day">Fri</span>
+      <span class="calendar__item calendar__item--day">Sat</span>
+      <span class="calendar__item calendar__item--day start-with">Sun</span>
+    </div>
+  </div>
+</div>
+<script type="application/javascript" src="index.js" onload="initCalendar()"></script>
 
-    </body>
+</body>
 </html>

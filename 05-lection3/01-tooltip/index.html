@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <!-- Страница с тултипом -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./tooltip.css">
-    </head>
-    <body>
-
-    </body>
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./tooltip.css">
+  <title>Tooltip</title>
+  <link rel="preload" as="image/svg+xml" href="../../assets/icons/bundle.svg"/>
+</head>
+<body class="sample-wrapper">
+<div>
+  <span class="tooltip">
+    <span class="tooltip__trigger">I am a very long long trigger</span>
+    <span class="tooltip__balloon">I am a tooltip!</span>
+  </span>
+</div>
+<div>
+  <span class="tooltip">
+    <span class="tooltip__trigger">medium trigger</span>
+    <span class="tooltip__balloon">I am a very very long tooltip!</span>
+  </span>
+</div>
+<div>
+  <span class="tooltip">
+    <span class="tooltip__trigger">s</span>
+    <span class="tooltip__balloon">I am a tooltip for small trigger!</span>
+  </span>
+</div>
+<div>
+  <span class="tooltip">
+    <svg class="tooltip__trigger" height="3rem" width="3rem">
+      <use href='../../assets/icons/bundle.svg#help'/>
+    </svg>
+    <span class="tooltip__balloon">I am a tooltip for small trigger!</span>
+  </span>
+</div>
+</body>
 </html>
