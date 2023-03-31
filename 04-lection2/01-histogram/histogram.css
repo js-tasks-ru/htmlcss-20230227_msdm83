@@ -8,7 +8,7 @@
   padding: 2rem 3rem 3rem;
 }
 
-.histogram-header {
+.histogram__header {
   font-family: 'Inter', 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -16,28 +16,28 @@
   line-height: 3rem;
 }
 
-.histogram-wrapper {
+.histogram__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.histogram-title {
+.histogram__title {
   color: var(--black);
 }
 
-.histogram-numbers {
+.histogram__numbers {
   font-size: 2.5rem;
   line-height: 3.25rem;
 }
 
-.histogram_body {
+.histogram__body {
   display: flex;
   margin-top: 5rem;
   height: 6.25rem;
   gap: 1px;
 }
 
-.histogram-column {
+.histogram__column {
   background-color: var(--blue);
   flex-grow: 1;
   align-self: baseline;

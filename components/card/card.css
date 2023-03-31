@@ -20,4 +20,5 @@
   line-height: 3rem;
   text-align: center;
   color: var(--black);
+  align-self: flex-end;
 }
