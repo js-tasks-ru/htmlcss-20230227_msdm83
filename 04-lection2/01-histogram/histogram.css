@@ -1,0 +1,44 @@
+@import "../../components/link/link.css";
+
+.histogram {
+  box-sizing: border-box;
+  background: var(--white);
+  border: 1px solid var(--grey-3);
+  border-radius: 1rem;
+  padding: 2rem 3rem 3rem;
+}
+
+.histogram__header {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.histogram__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.histogram__title {
+  color: var(--black);
+}
+
+.histogram__numbers {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+.histogram__body {
+  display: flex;
+  margin-top: 5rem;
+  height: 6.25rem;
+  gap: 1px;
+}
+
+.histogram__column {
+  background-color: var(--blue);
+  flex-grow: 1;
+  align-self: baseline;
+}

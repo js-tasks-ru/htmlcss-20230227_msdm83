@@ -4,11 +4,65 @@
 <head>
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./components/page/page.css">
+  <link rel="stylesheet" href="./components/card/card.css">
+  <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+  <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
   <title>Reusable component library</title>
 </head>
 <body class="page">
 <header class="page__header">Reusable component library</header>
-<main class="page__main">lala</main>
+<main class="page__main">
+  <div class="page__grid">
+    <div class="card">
+      <div class="histogram">
+        <div class="histogram__header">
+          <div class="histogram__wrapper">
+            <span class="histogram__title">Total orders</span>
+            <a href="#" class="link">View all</a>
+          </div>
+          <span class="histogram__numbers">9486904</span>
+        </div>
+        <div class="histogram__body">
+          <span class="histogram__column" style="height: 100%"></span>
+          <span class="histogram__column" style="height: 80%"></span>
+          <span class="histogram__column" style="height: 70%"></span>
+          <span class="histogram__column" style="height: 10%"></span>
+          <span class="histogram__column" style="height: 0"></span>
+          <span class="histogram__column" style="height: 1%"></span>
+          <span class="histogram__column" style="height: 99%"></span>
+          <span class="histogram__column" style="height: 50%"></span>
+          <span class="histogram__column" style="height: 33%"></span>
+        </div>
+      </div>
+      <span class="card__title">Histogram</span>
+    </div>
+    <div class="card">
+      <div class="skeleton">
+        <div class="skeleton__header ">
+          <div class="skeleton__picture"></div>
+          <div class="skeleton__title">
+            <div class="skeleton__line skeleton__line--small"></div>
+            <div class="skeleton__line skeleton__line--medium"></div>
+          </div>
+        </div>
+        <div class="skeleton__body">
+          <div class="skeleton__line"></div>
+          <div class="skeleton__line"></div>
+        </div>
+      </div>
+      <span class="card__title">Skeleton</span>
+    </div>
+    <div class="card">
+      <span class="card__title">sample 3</span>
+    </div>
+    <div class="card">
+      <span class="card__title">sample 4</span>
+    </div>
+    <div class="card">
+      <span class="card__title">sample 5</span>
+    </div>
+  </div>
+</main>
 <footer class="page__footer">
   <div class="page__about">About</div>
   <div class="page__text">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop
